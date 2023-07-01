@@ -5,6 +5,7 @@ from turtle import Turtle, Screen
 import random
 
 dee = Turtle()
+dee.shape('circle')
 colors = colorgram.extract('twohirsts.jpg', 30)
 turtle.colormode(255)
 dee.speed('fastest')
@@ -36,7 +37,7 @@ dot_numbers = 100
 
 
 for x in range(1, dot_numbers):
-    dee.dot(12, random.choice(color_list))
+    dee.dot(20, random.choice(color_list))
     dee.penup()
     dee.fd(50)
     if x % 10 == 0:
